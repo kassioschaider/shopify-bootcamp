@@ -1,8 +1,8 @@
 {
   "current": {
-    "color_text": "#3a3a3a",
+    "color_text": "#000000",
     "color_body_text": "#2b2727",
-    "color_sale_text": "#0988d9",
+    "color_sale_text": "#0968d9",
     "color_button": "#3a3a3a",
     "color_button_text": "#ffffff",
     "color_small_button_text_border": "#3a3a3a",
@@ -56,24 +56,24 @@
           "logo": "",
           "logo_max_width": 100,
           "main_linklist": "main-menu",
-          "message": false,
+          "message": true,
           "home_page_only": true,
-          "message_text": "Anuncie algo aqui",
-          "message_link": "",
-          "color_bg": "#3a3a3a",
+          "message_text": "Super promoção de dermocosméticos!",
+          "message_link": "shopify:\/\/collections\/all",
+          "color_bg": "#000000",
           "color_text": "#ffffff"
         }
       },
       "hero-1": {
         "type": "hero",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/Homem-No-Espelho-Produtos-para-homens-Mantecorp-Ivy-C-Glycare.jpg",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "large",
           "text_size": "large",
-          "title": "Imagem com sobreposição de texto",
-          "text": "<p>Use o texto de sobreposição para apresentar insights sobre sua marca aos clientes. Selecione imagens e textos que reflitam seu estilo e sua história.<\/p>",
+          "title": "Ivy C Gel e Glycare!",
+          "text": "<p>Previna o envelhecimento da pele com os melhores gel anti-idade da Mantecorp! Clique e descubra!<\/p>",
           "button_label": "",
           "button_link": ""
         }
@@ -140,7 +140,7 @@
         "type": "collection",
         "settings": {
           "title": "Coleção em destaque",
-          "collection": "",
+          "collection": "frontpage",
           "grid": 4,
           "rows": 2,
           "show_vendor": false,
@@ -167,22 +167,22 @@
           "quotes-0": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.<\/p>",
-              "author": "Nome do autor"
+              "quote": "<p>Super recomendo! Sempre encontro os lan&ccedil;amentos das melhores marcas.<\/p>",
+              "author": "Vivane Araujo"
             }
           },
           "quotes-1": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.<\/p>",
-              "author": "Nome do autor"
+              "quote": "<p>Melhor pre&ccedil;o do mercado e ainda d&atilde;o um desconto para cliente recorrente. Amei &lt;3<\/p>",
+              "author": "Letícia Noronha"
             }
           },
           "quotes-2": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.<\/p>",
-              "author": "Nome do autor"
+              "quote": "<p>F&aacute;cil de comprar, muitas formas de pagamento e despacham o pedido no mesmo dia!<\/p>",
+              "author": "Antônio Pereira"
             }
           }
         },
@@ -262,6 +262,39 @@
           "color_footer_text": "#ffffff",
           "show_locale_selector": true,
           "show_currency_selector": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Talvez você também goste de",
+          "show_vendor": false
         }
       }
     },
