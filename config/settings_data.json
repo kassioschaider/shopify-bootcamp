@@ -1,8 +1,8 @@
 {
   "current": {
     "color_text": "#3a3a3a",
-    "color_body_text": "#333232",
-    "color_sale_text": "#ea0606",
+    "color_body_text": "#2b2727",
+    "color_sale_text": "#0988d9",
     "color_button": "#3a3a3a",
     "color_button_text": "#ffffff",
     "color_small_button_text_border": "#3a3a3a",
@@ -11,7 +11,7 @@
     "color_text_field": "#ffffff",
     "color_image_overlay_text": "#ffffff",
     "color_image_overlay": "#685858",
-    "image_overlay_opacity": 40,
+    "image_overlay_opacity": 45,
     "color_borders": "#ebebeb",
     "color_body_bg": "#ffffff",
     "type_header_font": "helvetica_n7",
