@@ -73,9 +73,9 @@
           "hero_size": "large",
           "text_size": "large",
           "title": "Ivy C Gel e Glycare!",
-          "text": "<p>Previna o envelhecimento da pele com os melhores gel anti-idade da Mantecorp! Clique e descubra!<\/p>",
-          "button_label": "",
-          "button_link": ""
+          "text": "<p>Previna o envelhecimento da pele com os melhores gel anti-idade da Mantecorp! Descubra!<\/p>",
+          "button_label": "CLIQUE AQUI",
+          "button_link": "shopify:\/\/collections\/tratamento-facial"
         }
       },
       "feature-row": {
@@ -139,12 +139,12 @@
       "collection": {
         "type": "collection",
         "settings": {
-          "title": "Coleção em destaque",
-          "collection": "frontpage",
+          "title": "Produtos em destaque",
+          "collection": "tratamento-facial",
           "grid": 4,
-          "rows": 2,
-          "show_vendor": false,
-          "show_view_all": false
+          "rows": 1,
+          "show_vendor": true,
+          "show_view_all": true
         }
       },
       "hero-2": {
@@ -281,7 +281,7 @@
         "settings": {
           "show_quantity_selector": true,
           "show_variant_labels": true,
-          "show_vendor": false,
+          "show_vendor": true,
           "enable_payment_button": true,
           "show_share_buttons": true,
           "media_size": "medium",
