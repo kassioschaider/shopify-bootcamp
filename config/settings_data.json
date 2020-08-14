@@ -81,12 +81,12 @@
       "feature-row": {
         "type": "feature-row",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/towels-bath-bombs-and-candles.jpg",
           "layout": "left",
-          "title": "Imagem com texto",
-          "text": "<p>Emparelhe textos grandes com uma imagem para destacar o produto, a coleção ou o post do blog escolhido. Adicione informações sobre disponibilidade, estilo ou até mesmo uma avaliação.<\/p>",
-          "button_label": "",
-          "button_link": ""
+          "title": "Lançamento!",
+          "text": "<p>As pesquisas de SkinCeuticals mostram que combina&ccedil;&otilde;es espec&iacute;ficas de antioxidantes, quando corretamente formuladas, revelam resultados r&aacute;pidos e superiores que f&oacute;rmulas com apenas um tipo de antioxidante.<\/p>",
+          "button_label": "CLIQUE E CONHEÇA!",
+          "button_link": "shopify:\/\/products\/blemish-age-defense-serum-antioleosidade-e-anti-acne-30ml"
         }
       },
       "feature-columns": {
@@ -294,7 +294,7 @@
         "settings": {
           "show_product_recommendations": true,
           "heading": "Talvez você também goste de",
-          "show_vendor": false
+          "show_vendor": true
         }
       }
     },
