@@ -14,6 +14,8 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
 
+        <hr>
+
         <h1 class="h1-serif">Heading Serif 1</h1>
         <h2 class="h2-serif">Heading Serif 2</h2>
         <h3 class="h3-serif">Heading Serif 3</h3>
@@ -21,11 +23,13 @@
         <h5 class="h5-serif">Heading Serif 5</h5>
         <h6 class="h6-serif">Heading Serif 6</h6>
 
+        <hr>
+
         <h1 class="heading-uppercase">Heading uppercase 1</h1>
         <h2 class="heading-uppercase">Heading uppercase 2</h2>
-
         <div class="heading-uppercase-small">Heading uppercase Small</div>
-        <br><br>
+
+        <hr>
 
         <p>Etiam nec semper sem. Donec blandit maximus tellus eu blandit. Sed eleifend magna ac nisl sagittis, tempor sagittis erat varius. In nec consectetur enim, ac aliquet dolor. Nunc sit amet sollicitudin nibh. Maecenas quis suscipit lorem, vel blandit eros. Mauris quis orci libero. Nunc quis elementum tortor. Fusce volutpat ipsum sit amet erat volutpat vulputate. Mauris gravida massa non mauris molestie mollis. Nam sollicitudin ex eu dui fermentum venenatis vitae a tellus. Morbi gravida ligula sit amet risus suscipit laoreet.</p>
         
@@ -34,12 +38,69 @@
         <p class="mini-text">Etiam nec semper sem. Donec blandit maximus tellus eu blandit. Sed eleifend magna ac nisl sagittis, tempor sagittis erat varius. In nec consectetur enim, ac aliquet dolor. Nunc sit amet sollicitudin nibh. Maecenas quis suscipit lorem, vel blandit eros. Mauris quis orci libero. Nunc quis elementum tortor. Fusce volutpat ipsum sit amet erat volutpat vulputate. Mauris gravida massa non mauris molestie mollis. Nam sollicitudin ex eu dui fermentum venenatis vitae a tellus. Morbi gravida ligula sit amet risus suscipit laoreet.</p>
         
         <p class="mini-text-uppercase">Etiam nec semper sem. Donec blandit maximus tellus eu blandit. Sed eleifend magna ac nisl sagittis, tempor sagittis erat varius. In nec consectetur enim, ac aliquet dolor. Nunc sit amet sollicitudin nibh. Maecenas quis suscipit lorem, vel blandit eros. Mauris quis orci libero. Nunc quis elementum tortor. Fusce volutpat ipsum sit amet erat volutpat vulputate. Mauris gravida massa non mauris molestie mollis. Nam sollicitudin ex eu dui fermentum venenatis vitae a tellus. Morbi gravida ligula sit amet risus suscipit laoreet.</p>
-        
+
+        <hr> 
+
         {% include 'icon-cart' %}
+        {% include 'icon-close' %}
+        {% include 'icon-menu' %}
         {% include 'icon-search' %}
+        {% include 'icon-plus' %}
+        {% include 'icon-minus' %}
+        {% include 'icon-youtube' %}
+        {% include 'icon-twitter' %}
+        {% include 'icon-instagram' %}
+        {% include 'icon-facebook' %}
+        {% include 'icon-arrow' %}
+
+        <hr>
 
         <button>Button test</button>
         <button class="btn">Button test</button>
+        <button class="btn btn-pink">Button test</button>
+
+        <div style="background: black; padding: 20px; margin: 30px 0;">
+          <button class="btn btn-ghost">Button test</button>
+        </div>
+
+        <button class="btn btn-ghost btn-ghost-black">Button test</button>
+
+        <br><br>
+
+        <button class="btn btn-small">Button small</button>
+        <button class="btn">Button default</button>
+        <button class="btn btn-large">Button large</button>
+
+        <br><br>
+
+        <button class="btn btn-pink" disabled>Button test</button>
+
+        <hr>
+
+        <span class="badge">10</span>
+
+        <span class="badge">Text example</span>
+
+        <a href="#" class="site-header__icon site-header__cart">
+          {% include 'icon-cart' %}
+          <span class="icon__fallback-text">Carrinho</span>
+          <div class="site-header__cart-count">
+            <span>10</span>
+            <span class="icon__fallback-text medium-up--hide">itens</span>
+          </div>
+        </a>
+
+        <hr>
+
+        <label for="input_test">Label example</label>
+        <input type="text" id="input_test">
+
+        <label for="select_test">Select example</label>
+        <select id="select_test">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
 
       </div>
     </div>
