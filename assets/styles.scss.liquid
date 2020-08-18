@@ -1,3 +1,12 @@
+//Colors
+//--------------------------------------------------------------------------------------------
+$color-border: #CCC;
+$color-black: #000;
+$color-black-focus: #444;
+$color-white: #FFF;
+$color-pink: #ED1E7A;
+$color-pink-focus: #C01561;
+
 //Fonts
 //--------------------------------------------------------------------------------------------
 @font-face {
@@ -31,6 +40,15 @@
 // body {
 //     font-family: 'Palanquin', sans-serif;
 // }
+
+//Body
+//--------------------------------------------------------------------------------------------
+body {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+    background: $color-white;
+}
 
 //Headings
 //--------------------------------------------------------------------------------------------
@@ -72,8 +90,77 @@ h4, h5, h6 {
 
 .heading-uppercase {
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+h1.heading-uppercase {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h2.heading-uppercase {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.heading-uppercase-small {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+//Typograph
+//--------------------------------------------------------------------------------------------
+p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.crossed-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: $color-border;
+}
+
+.mini-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.mini-text-uppercase {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+//Icons
+//--------------------------------------------------------------------------------------------
+.icon {
+    width: auto;
+    height: 24px;
+}
+
+//Buttons
+//--------------------------------------------------------------------------------------------
+button,
+.btn {
+    height: 48px;
+    color: $color-white;
+    background: $color-black;
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border: 0;
+    border-radius: 0;
+
+    &:focus {
+        background: $color-black-focus;
+    }
 }
