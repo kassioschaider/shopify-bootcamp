@@ -1,5 +1,7 @@
-//Colors
+//Variables
 //--------------------------------------------------------------------------------------------
+
+//Colors
 $color-border: #CCC;
 $color-black: #000;
 $color-black-focus: #444;
@@ -7,8 +9,15 @@ $color-white: #FFF;
 $color-pink: #ED1E7A;
 $color-pink-focus: #C01561;
 
+//Backgrounds
+$color-body: {{ settings.color_body_bg }};
+
+//Header
+$header-mobile-hight: 56px;
+
 //Fonts
 //--------------------------------------------------------------------------------------------
+
 @font-face {
     font-family: 'Palanquin';
     src: url('{{ "Palanquin-Regular.eot" | asset_url}}');
@@ -43,6 +52,7 @@ $color-pink-focus: #C01561;
 
 //Body
 //--------------------------------------------------------------------------------------------
+
 body {
     font-size: 16px;
     line-height: 24px;
@@ -52,6 +62,7 @@ body {
 
 //Headings
 //--------------------------------------------------------------------------------------------
+
 h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-weight: bold;
@@ -114,6 +125,7 @@ h2.heading-uppercase {
 
 //Typograph
 //--------------------------------------------------------------------------------------------
+
 p {
     font-size: 16px;
     line-height: 24px;
@@ -140,6 +152,7 @@ p {
 
 //Icons
 //--------------------------------------------------------------------------------------------
+
 .icon {
     width: auto;
     height: 24px;
@@ -147,6 +160,7 @@ p {
 
 //Buttons
 //--------------------------------------------------------------------------------------------
+
 button,
 .btn {
     height: 48px;
@@ -215,5 +229,81 @@ button,
         color: $color-black;
         outline-color: $color-black;
         background-color: transparent;
+    }
+}
+
+//Badge
+//--------------------------------------------------------------------------------------------
+
+.badge {
+    background: $color-pink;
+    border-radius: 5px;
+    color: $color-white;
+    padding: 4px 5px;
+    @extend .mini-text-uppercase;
+}
+
+//Forms
+//--------------------------------------------------------------------------------------------
+
+label {
+    @extend .mini-text-uppercase;
+}
+
+select,
+input {
+    padding: 8px 10px;
+    height: 40px;
+    border: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+    outline: 1px solid $color-border;
+
+    &:focus {
+        outline-color: $color-black;
+    }
+}
+
+select {
+    padding-right: 40px;
+}
+
+//Minicart
+//--------------------------------------------------------------------------------------------
+
+.minicart-trigger {
+
+    .badge {
+        line-height: 16px;
+        margin-right: 5px;
+        padding: 4px 2px 4px 5px;
+    }
+}
+
+// Page
+// -----------------------------------------------------------
+
+.page-container {
+    padding-top: $header-mobile-hight;
+}
+
+// Header
+// -----------------------------------------------------------
+
+.site-header {
+    height: $header-mobile-hight;
+    background: $color-body;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 0 20px;
+}
+
+.site-header__icon {
+    padding: 0;
+
+    .icon {
+        width: 40px;
     }
 }
