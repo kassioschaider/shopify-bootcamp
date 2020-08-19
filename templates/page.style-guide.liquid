@@ -5,7 +5,7 @@
         <h1>{{ page.title }}</h1>
       </div>
 
-      <div class="rte">
+      <div class="style-guide">
       
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -39,7 +39,7 @@
         
         <p class="mini-text-uppercase">Etiam nec semper sem. Donec blandit maximus tellus eu blandit. Sed eleifend magna ac nisl sagittis, tempor sagittis erat varius. In nec consectetur enim, ac aliquet dolor. Nunc sit amet sollicitudin nibh. Maecenas quis suscipit lorem, vel blandit eros. Mauris quis orci libero. Nunc quis elementum tortor. Fusce volutpat ipsum sit amet erat volutpat vulputate. Mauris gravida massa non mauris molestie mollis. Nam sollicitudin ex eu dui fermentum venenatis vitae a tellus. Morbi gravida ligula sit amet risus suscipit laoreet.</p>
 
-        <hr> 
+        <hr>
 
         {% include 'icon-cart' %}
         {% include 'icon-close' %}
@@ -52,14 +52,13 @@
         {% include 'icon-instagram' %}
         {% include 'icon-facebook' %}
         {% include 'icon-arrow' %}
-        {% include 'icon-login' %}
 
         <hr>
 
         <button>Button test</button>
         <button class="btn">Button test</button>
         <button class="btn btn-pink">Button test</button>
-
+        
         <div style="background: black; padding: 20px; margin: 30px 0;">
           <button class="btn btn-ghost">Button test</button>
         </div>
@@ -82,19 +81,30 @@
 
         <span class="badge">Text example</span>
 
-        <a href="#" class="site-header__icon site-header__cart">
-          {% include 'icon-cart' %}
+        <br><br>
+
+        <a href="#" class="site-header__icon site-header__cart minicart-trigger">
+          <span class="site-header__cart-count badge hide">
+            <span></span>
+            <span class="icon__fallback-text medium-up--hide">itens</span>
+          </span>
+          <span>{% include 'icon-cart' %}</span>
           <span class="icon__fallback-text">Carrinho</span>
-          <div class="site-header__cart-count">
+        </a>
+
+        <a href="#" class="site-header__icon site-header__cart minicart-trigger">
+          <span class="site-header__cart-count badge">
             <span>10</span>
             <span class="icon__fallback-text medium-up--hide">itens</span>
-          </div>
+          </span>
+          <span>{% include 'icon-cart' %}</span>
+          <span class="icon__fallback-text">Carrinho</span>
         </a>
 
         <hr>
-
+        
         <label for="input_test">Label example</label>
-        <input type="text" id="input_test">
+        <input type="text" id="input_test" placeholder="Digite seu e-mail">
 
         <label for="select_test">Select example</label>
         <select id="select_test">
