@@ -291,19 +291,55 @@ select {
 // Header
 // -----------------------------------------------------------
 
+.site-header__logo {
+    margin: 0px;
+}
+
+.site-header__logo-image {
+
+    img {
+        // height: 40px;
+    }
+}
+
+.site-header__logo-wrapper {
+    width: auto;
+}
+
 .site-header {
     height: $header-mobile-hight;
     background: $color-body;
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 0 20px;
+    padding: 8px 20px;
 }
+
+// .site-header__icon {
+//     padding: 0;
+//     height: 24px;
+//     margin-left: 20px;
+//     width: 24px;
+
+//     .icon {
+//         width: 40px;
+//     }
+// }
 
 .site-header__icon {
     padding: 0;
+    height: 24px;
+    width: 24px;
 
-    .icon {
-        width: 40px;
+    &.site-header__menu {
+        margin-left: 20px;
+    }
+
+    &.site-header__cart {
+        margin-left: 20px;
+    }
+
+    &.site-header__account {
+        margin-left: 15px;
     }
 }
