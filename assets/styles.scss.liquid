@@ -285,8 +285,10 @@ select {
 
     .badge {
         line-height: 16px;
-        margin-right: 5px;
-        padding: 4px 2px 4px 5px;
+        padding: 4px 5px;
+        min-width: 25px;
+        display: inline-block;
+        text-align: center;
     }
 }
 
@@ -321,7 +323,7 @@ select {
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 15px 20px;
+    padding: 8px 20px;
 }
 
 .site-header__icon {
@@ -339,7 +341,12 @@ select {
 
     &.site-header__account {
         margin-left: 15px;
+        display: none; //só ṕra não ficar diferente do protótipo
     }
+}
+
+.cart-count-margin-adjust {
+    margin-right: 20px;
 }
 
 // Announcement Bar
@@ -362,7 +369,7 @@ select {
     text-transform: uppercase;
     margin-bottom: 0px;
     text-shadow: none !important;
-    // tirar dúvida sobre o !important acima
+    // tirar dúvida sobre o !important acima 
 }
 
 .hero__overlay::before {
@@ -370,9 +377,21 @@ select {
 }
 
 .hero-text-padding-adjust {
-    padding: 224px 81px 0px 80px;
+    padding: 184px 81px 0px 80px;
 }
 
 .hero__btn {
     margin-top: 28px;
+}
+
+.hero {
+    background-size: contain;
+}
+
+.hero--large {
+    height: 424px;
+}
+
+.hero__inner {
+    padding: 42px 0px;
 }

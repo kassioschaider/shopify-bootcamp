@@ -1295,10 +1295,8 @@ $grid-breakpoints: (
   clip: auto;
   width: auto;
   height: auto;
-  margin: 0;
-  color: $color-text;
-  background-color: $color-bg;
-  padding: 10px;
+  margin: 8px 20px;
+  padding: 8px;
   opacity: 1;
   z-index: $z-index-skip-to-content;
   transition: none;
@@ -4851,6 +4849,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
   @include media-query($small) {
     width: auto;
+    padding-right: 13px;
 
     .btn--link {
       font-size: em($font-size-base);
