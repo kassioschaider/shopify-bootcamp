@@ -44,6 +44,15 @@ $header-mobile-hight: 56px;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Regular.woff2') format('woff2'),
+        url('Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 // //Body
 // //--------------------------------------------------------------------------------------------
 // body {
@@ -338,4 +347,31 @@ select {
 
 .announcement-bar {
     display: none;
+}
+
+// Hero
+
+.mega-title {
+    font-family: 'Nunito' !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-shadow: none;
+}
+
+.hero__overlay::before {
+    background-color: transparent;
+}
+
+.hero-text-padding-adjust {
+    padding: 224px 81px 0px 80px;
+}
+
+.hero__btn {
+    margin-top: 28px;
 }

@@ -85,7 +85,7 @@
       </div>
     {%- endif -%}
       <div class="hero__inner">
-        <div class="page-width text-center">
+        <div class="page-width text-center hero-text-padding-adjust">
           {%- if section.settings.title != blank -%}
             <h2 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title | escape }}</h2>
           {%- endif -%}
@@ -105,7 +105,7 @@
             {%- endcapture -%}
 
             <a href="{{ section.settings.button_link }}"
-              class="btn hero__btn"
+              class="btn hero__btn btn-ghost"
               aria-label="{{ ariaLabel }}">
               {{- section.settings.button_label | escape -}}
             </a>
