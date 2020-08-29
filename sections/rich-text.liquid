@@ -2,12 +2,19 @@
   <div class="grid">
     <div class="grid__item {% unless section.settings.full_width %} medium-up--two-thirds medium-up--push-one-sixth{% endunless %}">
       {% if section.settings.section_title != blank %}
-        <div class="rich-text__heading--{{ section.settings.text_size }} text-center">
+        <div class="rich-text__heading--{{ section.settings.text_size }} text-left">
           <h2 class="h3">{{ section.settings.section_title | escape }}</h2>
         </div>
       {% endif %}
       {% if section.settings.text != blank %}
-        <div class="rich-text__text--{{ section.settings.text_size }} rte-setting text-center">{{ section.settings.text }}</div>
+        <div class="rich-text__text--{{ section.settings.text_size }} rte-setting text-{{ section.settings.text_align }}">{{ section.settings.text }}</div>
+      {% endif %}
+      {% if section.settings.button_label != blank %}
+        <a href="{{ section.settings.button_link }}"
+            class="btn hero__btn {{ section.settings.button_type }}"
+            aria-label="{{ ariaLabel }}">
+            {{- section.settings.button_label | escape -}}
+        </a>
       {% endif %}
     </div>
   </div>
@@ -246,6 +253,125 @@
           "value": "large"
         }
       ]
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": {
+        "en": "Text Align",
+        "pt-BR": "Alinhamento do Texto"
+      },
+      "default": "center",
+      "options": [
+        {
+          "label": {
+            "en": "Center",
+            "pt-BR": "Centro"
+          },
+          "value": "center"
+        },
+        {
+          "label": {
+            "en": "Left",
+            "pt-BR": "Esquerda"
+          },
+          "value": "left"
+        },
+        {
+          "label": {
+            "en": "Right",
+            "pt-BR": "Direta"
+          },
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": {
+        "da": "Knaptekst",
+        "de": "Button-Etikett",
+        "en": "Button label",
+        "es": "Etiqueta de botón",
+        "fi": "Tekstipainike",
+        "fr": "Texte du bouton",
+        "hi": "बटन लेबल",
+        "it": "Etichetta pulsante",
+        "ja": "ボタンのラベル",
+        "ko": "버튼 레이블",
+        "nb": "Knappetikett",
+        "nl": "Knoplabel",
+        "pt-BR": "Etiqueta de botão",
+        "pt-PT": "Etiqueta do botão",
+        "sv": "Knappetikett",
+        "th": "ป้ายกำกับปุ่ม",
+        "zh-CN": "按钮标签",
+        "zh-TW": "按鈕標籤"
+      }
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": {
+        "en": "Button Type",
+        "pt-BR": "Tipo do Botão"
+      },
+      "default": "btn",
+      "options": [
+        {
+          "label": {
+            "en": "Black",
+            "pt-BR": "Black"
+          },
+          "value": "btn"
+        },
+        {
+          "label": {
+            "en": "Ghost",
+            "pt-BR": "Ghost"
+          },
+          "value": "btn-ghost"
+        },
+        {
+          "label": {
+            "en": "Ghost Black",
+            "pt-BR": "Ghost Black"
+          },
+          "value": "btn-ghost btn-ghost-black"
+        },
+        {
+          "label": {
+            "en": "Pink",
+            "pt-BR": "Pink"
+          },
+          "value": "btn-pink"
+        }
+      ]
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": {
+        "da": "Knaplink",
+        "de": "Button-Etikett",
+        "en": "Button link",
+        "es": "Enlace de botón",
+        "fi": "Painikelinkki",
+        "fr": "Lien du bouton",
+        "hi": "बटन लिंक",
+        "it": "Link pulsante",
+        "ja": "ボタンのリンク",
+        "ko": "버튼 링크",
+        "nb": "Kobling for knapp",
+        "nl": "Knoplink",
+        "pt-BR": "Link de botão",
+        "pt-PT": "Ligação do botão",
+        "sv": "Knapplänk",
+        "th": "ลิงก์ปุ่ม",
+        "zh-CN": "按钮链接",
+        "zh-TW": "按鈕連結"
+      }
     }
   ],
   "presets": [
