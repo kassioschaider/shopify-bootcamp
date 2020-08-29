@@ -4846,10 +4846,9 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 .site-header__icons {
   position: relative;
   white-space: nowrap;
+  width: 100%;
 
   @include media-query($small) {
-    width: auto;
-    padding-right: 13px;
 
     .btn--link {
       font-size: em($font-size-base);
@@ -4859,9 +4858,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 .site-header__icons-wrapper {
   position: relative;
-  @include display-flexbox();
-  @include align-items(center);
-  @include justify-content(flex-end);
+  display: block;
 }
 
 ///
@@ -4880,10 +4877,6 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
       display: block;
     }
   }
-}
-
-.site-header__search-toggle {
-  display: block;
 }
 
 .site-header__account {

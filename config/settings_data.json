@@ -53,8 +53,8 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "",
-          "logo_max_width": 100,
+          "logo": "shopify:\/\/shop_images\/Logo_40px_-_Black.png",
+          "logo_max_width": 114,
           "main_linklist": "main-menu",
           "message": true,
           "home_page_only": true,
@@ -67,14 +67,14 @@
       "hero-1": {
         "type": "hero",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Homem-No-Espelho-Produtos-para-homens-Mantecorp-Ivy-C-Glycare.jpg",
-          "alignment": "center",
+          "image": "shopify:\/\/shop_images\/image_3.png",
+          "alignment": "top",
           "hero_layout": "full_width",
           "hero_size": "large",
           "text_size": "large",
-          "title": "Ivy C Gel e Glycare!",
-          "text": "<p>Previna o envelhecimento da pele com os melhores gel anti-idade da Mantecorp Skincare!<\/p>",
-          "button_label": "DESCUBRA!",
+          "title": "Find your best style",
+          "text": "",
+          "button_label": "Shop now",
           "button_link": "shopify:\/\/collections\/tratamento-facial"
         }
       },
@@ -139,12 +139,12 @@
       "collection": {
         "type": "collection",
         "settings": {
-          "title": "Produtos em destaque",
+          "title": "New products",
           "collection": "tratamento-facial",
-          "grid": 4,
-          "rows": 1,
-          "show_vendor": true,
-          "show_view_all": true
+          "grid": 3,
+          "rows": 4,
+          "show_vendor": false,
+          "show_view_all": false
         }
       },
       "hero-2": {
@@ -300,9 +300,9 @@
     },
     "content_for_index": [
       "hero-1",
+      "collection",
       "feature-row",
       "feature-columns",
-      "collection",
       "hero-2",
       "quotes",
       "image-bar"
