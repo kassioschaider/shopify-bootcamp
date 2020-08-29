@@ -105,7 +105,7 @@
             {%- endcapture -%}
 
             <a href="{{ section.settings.button_link }}"
-              class="btn hero__btn btn-ghost"
+              class="btn hero__btn {{ section.settings.button_type }}"
               aria-label="{{ ariaLabel }}">
               {{- section.settings.button_label | escape -}}
             </a>
@@ -688,6 +688,45 @@
         "zh-CN": "按钮标签",
         "zh-TW": "按鈕標籤"
       }
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": {
+        "en": "Button Type",
+        "pt-BR": "Tipo do Botão"
+      },
+      "default": "btn",
+      "options": [
+        {
+          "label": {
+            "en": "Black",
+            "pt-BR": "Black"
+          },
+          "value": "btn"
+        },
+        {
+          "label": {
+            "en": "Ghost",
+            "pt-BR": "Ghost"
+          },
+          "value": "btn-ghost"
+        },
+        {
+          "label": {
+            "en": "Ghost Black",
+            "pt-BR": "Ghost Black"
+          },
+          "value": "btn-ghost btn-ghost-black"
+        },
+        {
+          "label": {
+            "en": "Pink",
+            "pt-BR": "Pink"
+          },
+          "value": "btn-pink"
+        }
+      ]
     },
     {
       "type": "url",
