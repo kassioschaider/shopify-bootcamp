@@ -24,7 +24,7 @@
   assign money_price = price | money
 -%}
 
-<dl class="price price--listing
+<dl class="price price--listing mini-text
   {%- if available == false %} price--sold-out {% endif -%}
   {%- if compare_at_price > price %} price--on-sale {% endif -%}
   {%- if product.price_varies == false and product.compare_at_price_varies %} price--compare-price-hidden {% endif -%}
