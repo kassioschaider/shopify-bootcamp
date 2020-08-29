@@ -245,23 +245,32 @@
               "menu": "footer"
             }
           },
-          "footer-1": {
-            "type": "newsletter",
+          "1598668968670": {
+            "type": "text",
             "settings": {
-              "title": "Newsletter"
+              "title": "Fale sobre o seu negócio",
+              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+            }
+          },
+          "1598672624744": {
+            "type": "logo_img",
+            "settings": {
+              "title": "",
+              "img": "shopify:\/\/shop_images\/awake.png"
             }
           }
         },
         "block_order": [
-          "footer-0",
-          "footer-1"
+          "1598672624744",
+          "1598668968670",
+          "footer-0"
         ],
         "settings": {
           "show_payment_icons": true,
           "color_footer_bg": "#000000",
           "color_footer_text": "#ffffff",
-          "show_locale_selector": true,
-          "show_currency_selector": true
+          "show_locale_selector": false,
+          "show_currency_selector": false
         }
       },
       "collection-template": {

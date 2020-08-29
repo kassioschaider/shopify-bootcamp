@@ -275,7 +275,7 @@
       "email": "E-mail",
       "password": "Senha",
       "forgot_password": "Esqueceu sua senha?",
-      "sign_in": "Fazer login",
+      "sign_in": "Login",
       "guest_title": "Continuar como convidado",
       "guest_continue": "Continuar"
     },
@@ -365,7 +365,7 @@
     "customer": {
       "account": "Conta",
       "log_out": "Sair",
-      "log_in": "Fazer login",
+      "log_in": "Login",
       "create_account": "Criar conta"
     },
     "footer": {
@@ -424,5 +424,15 @@
     "instagram": "Instagram",
     "facebook": "Facebook",
     "login": "Login"
+  },
+  "shopify": {
+    "checkout": {
+      "customer_account": {
+        "sign_in_link_label": "Login"
+      },
+      "thank_you": {
+        "login": "Login"
+      }
+    }
   }
 }

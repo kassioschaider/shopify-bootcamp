@@ -140,6 +140,14 @@
 <footer class="site-footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
     <div class="site-footer__content">
+
+      {% if section.settings.logo %}
+        {% capture logo_alt %}{{ section.settings.logo.alt | default: shop.name }}{% endcapture %}
+        <a href="{{ routes.root_url }}" class="site-footer__logo">
+          <img src="{{ section.settings.logo | img_url: '300x300' }}" alt="{{ logo_alt }}"/>
+        </a>     
+      {% endif %}
+
       {%- for block in section.blocks -%}
 
         <div class="site-footer__item
@@ -148,11 +156,6 @@
                     {% if block.type == 'newsletter' and section.blocks.size == 3 %}site-footer-newsletter__one-half{% endif %}"
              {{ block.shopify_attributes }}>
           <div class="site-footer__item-inner site-footer__item-inner--{{ block.type }}">
-
-            {%- if block.settings.title -%}
-              <p class="h4">{{ block.settings.title | escape }}</p>
-            {%- endif -%}
-
             {%- case block.type -%}
               {%- when 'newsletter' -%}
                 <div class="site-footer__newsletter
@@ -206,11 +209,20 @@
                   </div>
                 {%- endif -%}
 
+              {%- when 'logo_img' -%}
+                {% if block.settings.img %}
+                  {% capture logo_alt %}{{ block.settings.img.alt | default: shop.name }}{% endcapture %}
+                  <a href="{{ routes.root_url }}" class="site-footer__logo">
+                    <img src="{{ block.settings.img | img_url: '300x300' }}" alt="{{ logo_alt }}" />
+                  </a>
+                {% endif %}
+
               {%- when 'link_list' -%}
                 {%- assign footer_linklist = block.settings.menu -%}
                   <ul class="site-footer__linklist
                             {% if inline_list %}list--inline{% endif %}">
                     {%- for link in linklists[footer_linklist].links -%}
+                      
                       <li class="site-footer__linklist-item">
                         <a href="{{ link.url }}"
                           {% if link.current %} aria-current="page"{% endif %}
@@ -218,6 +230,17 @@
                           {{ link.title | escape }}
                         </a>
                       </li>
+
+                      {%- for sub_link in link.links -%}
+                        <li class="site-footer__linklist-item sub_item_list">
+                          <a href="{{ sub_link.url }}"
+                            {% if sub_link.current %} aria-current="page"{% endif %}
+                          >
+                            {{ sub_link.title | escape }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+
                     {%- endfor -%}
                     <li class="site-footer__linklist-item">{% include 'customer-login-link' %}</li>
                   </ul>
@@ -319,7 +342,6 @@
         {%- else -%}
           <div class="small--hide site-footer-item-align-right {% if show_selectors or show_payment_icons %}site-footer-item-center-vertically{% endif %}">
             <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-            <small class="site-footer__copyright-content site-footer__copyright-content-powered-by">{{ powered_by_link }}</small>
           </div>
         {%- endif -%}
       </div>
@@ -333,13 +355,11 @@
       {%- if social_icons and show_selectors -%}
         <div class="grid__item small--hide site-footer-item-align-right {% if show_payment_icons %}one-half{% endif %}">
           <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-          <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
         </div>
       {%- endif -%}
 
       <div class="grid__item small--one-whole {{ copyright_show_class }} site-footer-item-align-right">
         <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-        <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
       </div>
     </div>
   </div>
@@ -923,6 +943,31 @@
             "th": "จดหมายข่าว",
             "zh-CN": "新闻通讯",
             "zh-TW": "電子報"
+          }
+        }
+      ]
+    },
+    {
+      "type": "logo_img",
+      "name": {
+        "en": "Logo",
+        "pt-BR": "Logo"
+      },
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "en": "Title",
+            "pt-BR": "Título"
+          }
+        },
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": {
+            "en": "Image",
+            "pt-BR": "Imagem"
           }
         }
       ]
