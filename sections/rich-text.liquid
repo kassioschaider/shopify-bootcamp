@@ -3,7 +3,7 @@
     <div class="grid__item {% unless section.settings.full_width %} medium-up--two-thirds medium-up--push-one-sixth{% endunless %}">
       {% if section.settings.section_title != blank %}
         <div class="rich-text__heading--{{ section.settings.text_size }} text-left">
-          <h2 class="h3">{{ section.settings.section_title | escape }}</h2>
+          <h1>{{ section.settings.section_title | escape }}</h1>
         </div>
       {% endif %}
       {% if section.settings.text != blank %}
