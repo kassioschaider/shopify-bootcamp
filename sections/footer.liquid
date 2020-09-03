@@ -219,31 +219,47 @@
 
               {%- when 'link_list' -%}
                 {%- assign footer_linklist = block.settings.menu -%}
-                  <ul class="site-footer__linklist
-                            {% if inline_list %}list--inline{% endif %}">
-                    {%- for link in linklists[footer_linklist].links -%}
-                      
-                      <li class="site-footer__linklist-item">
-                        <a href="{{ link.url }}"
-                          {% if link.current %} aria-current="page"{% endif %}
+                <ul class="site-footer__linklist
+                          {% if inline_list %}list--inline{% endif %}">
+
+                  {% comment %} LEVEL 1 {% endcomment %}
+                  {%- for link in linklists[footer_linklist].links -%}
+                    
+                    <li class="site-footer__linklist-item level_1">
+                      <a href="{{ link.url }}"
+                        {% if link.current %} aria-current="page"{% endif %}
+                      >
+                        {{ link.title | escape }}
+                      </a>
+                    </li>
+
+                    {% comment %} LEVEL 2 {% endcomment %}
+                    {%- for link_level2 in link.links -%}
+                      <li class="site-footer__linklist-item sub_item_list level_2">
+                        <a href="{{ link_level2.url }}"
+                          {% if link_level2.current %} aria-current="page"{% endif %}
                         >
-                          {{ link.title | escape }}
+                          {{ link_level2.title | escape }}
                         </a>
                       </li>
 
-                      {%- for sub_link in link.links -%}
-                        <li class="site-footer__linklist-item sub_item_list">
-                          <a href="{{ sub_link.url }}"
-                            {% if sub_link.current %} aria-current="page"{% endif %}
+                      {% comment %} LEVEL 3 {% endcomment %}
+                      {%- for link_level3 in link_level2.links -%}
+                        <li class="site-footer__linklist-item sub_item_list level_3">
+                          <a href="{{ link_level3.url }}"
+                            {% if link_level3.current %} aria-current="page"{% endif %}
                           >
-                            {{ sub_link.title | escape }}
+                            {{ link_level3.title | escape }}
                           </a>
                         </li>
+
                       {%- endfor -%}
 
                     {%- endfor -%}
-                    <li class="site-footer__linklist-item">{% include 'customer-login-link' %}</li>
-                  </ul>
+
+                  {%- endfor -%}
+                  <li class="site-footer__linklist-item">{% include 'customer-login-link' %}</li>
+                </ul>
             {%- endcase -%}
 
           </div>
