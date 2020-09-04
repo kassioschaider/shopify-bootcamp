@@ -76,7 +76,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito';
     font-style: normal;
-    font-weight: bold;
+    font-weight: bold !important;
     margin: 0 0 16px 0;
     padding: 0;
 }
@@ -231,8 +231,10 @@ button,
 
 .btn-ghost-black:not([disabled]),
 .btn-ghost-black {
+    background-color: transparent;
+    outline: 1px solid $color-black;
+    outline-offset: -1px;
     color: $color-black;
-    outline-color: $color-black;
 
     &:hover,
     &:active,
@@ -240,6 +242,8 @@ button,
         color: $color-black;
         outline-color: $color-black;
         background-color: transparent;
+        outline-offset: -4px;
+        outline-width: 4px;
     }
 }
 
@@ -263,7 +267,7 @@ label {
 
 select,
 input {
-    padding: 8px 10px;
+    padding: 8px 10px;  
     height: 40px;
     border: 0;
     font-size: 16px;
@@ -360,47 +364,47 @@ select {
 
 // Hero
 
-.mega-title {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    text-shadow: none !important;
-    // tirar dúvida sobre o !important acima 
-}
+// .mega-title {
+//     font-family: 'Nunito';
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 32px;
+//     line-height: 40px;
+//     text-align: center;
+//     letter-spacing: 0.01em;
+//     text-transform: uppercase;
+//     margin-bottom: 0px;
+//     text-shadow: none !important;
+//     // tirar dúvida sobre o !important acima 
+// }
 
-.hero__overlay::before {
-    background-color: transparent;
-}
+// .hero__overlay::before {
+//     background-color: transparent;
+// }
 
-.hero-text-padding-adjust {
-    padding: 184px 81px 0px 80px;
-}
+// .hero-text-padding-adjust {
+//     padding: 184px 81px 0px 80px;
+// }
 
-.hero__btn {
-    margin-top: 28px;
-}
+// .hero__btn {
+//     margin-top: 28px;
+// }
 
-.hero {
-    background-size: contain;
-}
+// .hero {
+//     background-size: contain;
+// }
 
-.hero--large {
-    height: 424px;
-}
+// .hero--large {
+//     height: 424px;
+// }
 
-.hero__inner {
-    padding: 42px 0px;
-}
+// .hero__inner {
+//     padding: 42px 0px;
+// }
 
-.page-container {
-    padding-top: 16px;
-}
+// .page-container {
+//     padding-top: 16px;
+// }
 
 // Footer
 // -----------------------------------------------------------
@@ -499,13 +503,13 @@ select {
 //     padding-top: 0px;
 // }
 
-// .grid--view-items {
-//     text-align: center;
-// }
+.grid--view-items {
+    text-align: center;
+}
 
-// .price--listing {
-//     display: block;
-// }
+.price--listing {
+    display: block;
+}
 
 // .rich-text {
 //     margin: 0 0 24px 0;
@@ -518,6 +522,49 @@ select {
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
+
+    &.overlay-top {
+        align-items: flex-start;
+    }
+
+    &.overlay-top-left {
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    &.overlay-top-right {
+        align-items: flex-start;
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    &.overlay-center-left {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    &.overlay-center-right {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    &.overlay-bottom {
+        align-items: flex-end;
+    }
+
+    &.overlay-bottom-left {
+        align-items: flex-end;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    &.overlay-bottom-right {
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: right;
+    }
 
     img {
         width: 100%;
@@ -525,8 +572,10 @@ select {
 
     .overlay {
         position: absolute;
-        color: white;
-        background: red;
-        width: 100px;
+        padding: 56px 20px;
+
+        .rte-setting {
+            margin-bottom: 16px;
+        }
     }
 }
