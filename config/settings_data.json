@@ -14,9 +14,9 @@
     "image_overlay_opacity": 45,
     "color_borders": "#ebebeb",
     "color_body_bg": "#ffffff",
-    "type_header_font": "helvetica_n7",
+    "type_header_font": "nunito_n4",
     "type_header_base_size": 26,
-    "type_base_font": "helvetica_n4",
+    "type_base_font": "nunito_n4",
     "type_base_size": 15,
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
@@ -24,13 +24,13 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_twitter_link": "#",
+    "social_facebook_link": "#",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "#",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "",
+    "social_youtube_link": "#",
     "social_vimeo_link": "",
     "favicon": "",
     "enable_ajax": true,
@@ -67,182 +67,47 @@
       "hero-1": {
         "type": "hero",
         "settings": {
+          "background_image": false,
           "image": "shopify:\/\/shop_images\/image_3.png",
           "alignment": "top",
           "hero_layout": "full_width",
           "hero_size": "large",
+          "text_color": "#ffffff",
+          "overlay_alignment": "bottom",
           "text_size": "large",
           "title": "Find your best style",
           "text": "",
+          "button_style": "btn-ghost",
           "button_label": "Shop now",
-          "button_link": "shopify:\/\/collections\/tratamento-facial"
-        }
-      },
-      "feature-row": {
-        "type": "feature-row",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/towels-bath-bombs-and-candles.jpg",
-          "layout": "left",
-          "title": "Lançamento!",
-          "text": "<p>As pesquisas de SkinCeuticals mostram que combina&ccedil;&otilde;es espec&iacute;ficas de antioxidantes, quando corretamente formuladas, revelam resultados r&aacute;pidos e superiores que f&oacute;rmulas com apenas um tipo de antioxidante.<\/p>",
-          "button_label": "CLIQUE E CONHEÇA!",
-          "button_link": "shopify:\/\/products\/blemish-age-defense-serum-antioleosidade-e-anti-acne-30ml"
-        }
-      },
-      "feature-columns": {
-        "type": "feature-columns",
-        "blocks": {
-          "feature-columns-0": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Adicione um título ou slogan",
-              "text": "<p>Compartilhe posts de blogs, produtos ou promoções com seus clientes. Use este texto para descrever produtos, compartilhar detalhes sobre disponibilidade e estilo ou como um espaço para exibir comentários recentes ou perguntas frequentes.<\/p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "feature-columns-1": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Adicione um título ou slogan",
-              "text": "<p>Compartilhe posts de blogs, produtos ou promoções com seus clientes. Use este texto para descrever produtos, compartilhar detalhes sobre disponibilidade e estilo ou como um espaço para exibir comentários recentes ou perguntas frequentes.<\/p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "feature-columns-2": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": true,
-              "image": "",
-              "title": "Adicione um título ou slogan",
-              "text": "<p>Compartilhe posts de blogs, produtos ou promoções com seus clientes. Use este texto para descrever produtos, compartilhar detalhes sobre disponibilidade e estilo ou como um espaço para exibir comentários recentes ou perguntas frequentes.<\/p>",
-              "button_label": "",
-              "button_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "feature-columns-0",
-          "feature-columns-1",
-          "feature-columns-2"
-        ],
-        "settings": {
-          "title": "",
-          "align_text": "left"
-        }
-      },
-      "collection": {
-        "type": "collection",
-        "settings": {
-          "title": "New products",
-          "collection": "tratamento-facial",
-          "grid": 3,
-          "rows": 4,
-          "show_vendor": false,
-          "show_view_all": false
+          "button_link": "#"
         }
       },
       "hero-2": {
         "type": "hero",
         "settings": {
-          "image": "",
+          "background_image": false,
+          "image": "shopify:\/\/shop_images\/image_9.png",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "medium",
+          "text_color": "#ffffff",
+          "overlay_alignment": "bottom-right",
           "text_size": "large",
-          "title": "Imagem com sobreposição de texto",
-          "text": "<p>Use o texto de sobreposição para apresentar insights sobre sua marca aos clientes. Selecione imagens e textos que reflitam seu estilo e sua história.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
-      "quotes": {
-        "type": "quotes",
-        "blocks": {
-          "quotes-0": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>Super recomendo! Sempre encontro os lan&ccedil;amentos das melhores marcas.<\/p>",
-              "author": "Vivane Araujo"
-            }
-          },
-          "quotes-1": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>Melhor pre&ccedil;o do mercado e ainda d&atilde;o um desconto para cliente recorrente. Amei &lt;3<\/p>",
-              "author": "Letícia Noronha"
-            }
-          },
-          "quotes-2": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>F&aacute;cil de comprar, muitas formas de pagamento e despacham o pedido no mesmo dia!<\/p>",
-              "author": "Antônio Pereira"
-            }
-          }
-        },
-        "block_order": [
-          "quotes-0",
-          "quotes-1",
-          "quotes-2"
-        ],
-        "settings": {
-          "title": ""
-        }
-      },
-      "image-bar": {
-        "type": "image-bar",
-        "blocks": {
-          "image-bar-0": {
-            "type": "image",
-            "settings": {
-              "image": "",
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          },
-          "image-bar-1": {
-            "type": "image",
-            "settings": {
-              "image": "",
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          },
-          "image-bar-2": {
-            "type": "image",
-            "settings": {
-              "image": "",
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          }
-        },
-        "block_order": [
-          "image-bar-0",
-          "image-bar-1",
-          "image-bar-2"
-        ],
-        "settings": {
-          "section_height": "medium"
+          "title": "15% off sale",
+          "text": "",
+          "button_style": "btn-ghost",
+          "button_label": "Shop Sale",
+          "button_link": "#"
         }
       },
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
+          "1598672624744": {
+            "type": "logo_img",
             "settings": {
-              "title": "Links rápidos",
-              "menu": "footer"
+              "title": "",
+              "img": "shopify:\/\/shop_images\/awake.png"
             }
           },
           "1598668968670": {
@@ -252,11 +117,11 @@
               "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
             }
           },
-          "1598672624744": {
-            "type": "logo_img",
+          "footer-0": {
+            "type": "link_list",
             "settings": {
-              "title": "",
-              "img": "shopify:\/\/shop_images\/awake.png"
+              "title": "Links rápidos",
+              "menu": "footer"
             }
           }
         },
@@ -305,16 +170,80 @@
           "heading": "Talvez você também goste de",
           "show_vendor": true
         }
+      },
+      "1598687525967": {
+        "type": "collection",
+        "settings": {
+          "title": "New products",
+          "collection": "new-products",
+          "grid": 3,
+          "rows": 4,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "1598692536627": {
+        "type": "hero",
+        "settings": {
+          "background_image": false,
+          "image": "shopify:\/\/shop_images\/image_10.png",
+          "alignment": "top",
+          "hero_layout": "full_width",
+          "hero_size": "large",
+          "text_color": "#ffffff",
+          "overlay_alignment": "bottom",
+          "text_size": "large",
+          "title": "Best sellers",
+          "text": "",
+          "button_style": "",
+          "button_label": "Shop now",
+          "button_link": "#"
+        }
+      },
+      "1598694076390": {
+        "type": "collection",
+        "settings": {
+          "title": "Accessories",
+          "collection": "accessories",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "1598695632752": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "Designed for fashion.",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+          "text_size": "medium",
+          "text_align": "left",
+          "button_label": "Shop now",
+          "button_type": "btn",
+          "button_link": "#"
+        }
+      },
+      "1599215102398": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/image_13.png",
+          "layout": "left",
+          "title": "Designed for fashion.",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
       "hero-1",
-      "collection",
-      "feature-row",
-      "feature-columns",
+      "1598687525967",
+      "1598692536627",
+      "1598695632752",
       "hero-2",
-      "quotes",
-      "image-bar"
+      "1599215102398",
+      "1598694076390"
     ]
   },
   "presets": {
